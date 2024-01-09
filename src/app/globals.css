@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+      --text: #000405;
+      --background: #eef3fc;
+      --primary: #c2e7ff;
+      --secondary: #b1dbf6;
+      --accent: #6668d1;
+    }
+    .dark {
+      --text: #fafeff;
+      --background: #030811;
+      --primary: #00253d;
+      --secondary: #20326a;
+      --accent: #2e3099;
+    }
+    html {
+      line-height: 1.5;
+      color: var(--text);
+      background-color: var(--background);
+    }
+
+  }
+  
+  @layer components {
+    .btn {
+      @apply px-4 py-2 rounded-xl  hover:bg-primary transition duration-300  border border-accent;
+    }
+
+  }
